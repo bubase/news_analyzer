@@ -1,0 +1,13 @@
+.author__description {
+  height: auto;
+  max-width: 100%;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 24px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .author__description {
+    margin-bottom: 0;
+  }
+}

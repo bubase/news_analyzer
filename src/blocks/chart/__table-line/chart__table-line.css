@@ -1,0 +1,17 @@
+.chart__table-line {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.chart__table-line:nth-of-type(2) {
+  height: 52px;
+  padding-bottom: 14px;
+}
+
+@media screen and (max-width: 425px) {
+  .chart__table-line:nth-of-type(2) {
+    height: 48px;
+    padding-bottom: 0;
+  }
+}

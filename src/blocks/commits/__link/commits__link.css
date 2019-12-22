@@ -1,0 +1,43 @@
+.commits__link {
+  color: #1a1b22;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 104px 64px 0;
+}
+
+.commits__link:hover {
+  opacity: 0.7;
+}
+
+.commits__link::after {
+  display: inline-block;
+  content: '>';
+  transform: scale(1.2,1.7);
+}
+
+@media screen and (max-width: 768px) {
+  .commits__link {
+    margin: 8px 40px 68px 0;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .commits__link {
+    order: 3;
+    border: 1px solid #1A1B22;
+    box-sizing: border-box;
+    border-radius: 80px;
+    width: 288px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 24px 0 0 0;
+  }
+
+  .commits__link::after {
+    display: none;
+  }
+}

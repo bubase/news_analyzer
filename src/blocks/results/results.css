@@ -1,0 +1,32 @@
+@import url(./__container/results__container.css);
+@import url(./__link/results__link.css);
+@import url(./__more/results__more.css);
+@import url(./__title/results__title.css);
+@import url(./result/result.css);
+@import url(./__content/results__content.css);
+@import url(./__preloader/results__preloader.css);
+@import url(./__load-message/results__load-message.css);
+@import url(./__img-not-found/results__img-not-found.css);
+@import url(./__not-found-description/results__not-found-description.css);
+@import url(./__not-found-message/results__not-found-message.css);
+
+.results {
+  font-family: Roboto, Georgia, serif;
+  color: #1a1b22;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 104px;
+  background-color: #f5f6f7;
+}
+
+@media screen and (max-width: 900px) {
+  .results {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .results {
+    padding: 32px 16px 44px;
+  }
+}

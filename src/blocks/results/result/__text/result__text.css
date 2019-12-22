@@ -1,0 +1,12 @@
+.result__text {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1015px) {
+  .result__text {
+    max-height: 88px;
+    overflow: hidden;
+  }
+}
