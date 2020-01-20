@@ -1,0 +1,34 @@
+@import url("./__title/search__title.css");
+@import url("./__subtitle/search__subtitle.css");
+@import url("./__field/search__field.css");
+@import url("./__button/search__button.css");
+@import url("./__bar/search__bar.css");
+@import url("./__image-wrapper/search__image-wrapper.css");
+
+.search {
+  font-family: Roboto, Georgia, serif;
+  color: #1a1b22;
+  max-height: 476px;
+  max-width: 608px;
+  margin: 80px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .search {
+    max-width: calc(100% - 320px);
+    margin: 40px auto 48px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .search {
+    max-width: calc(100% - 120px);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .search {
+    max-width: calc(100% - 32px);
+    margin: 30px auto 32px;
+  }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About</title>
+  <meta name="description" content="Сервис для анализа происходящих в мире событий">
+  <meta name="keywords" content="новости, анализ новостей, сервис новостей, события, информация, статья">
+  <meta name="author" content="Ильмурад Рахмаев">
+  <link rel="shortcut icon" href="<%=require('./images/favicon.png').default%>" type="image/x-icon">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+</head>
+<body>
+  <div class="root">
+    <header class="header header_bg_white">
+      <a href="./index.html" class="header__title header__title_bg_white">NewsAnalyzer</a>
+      <nav class="header__menu">
+        <a href="./index.html" class="header__link header__link_bg_white">Главная</a>
+        <a href="./about.html" class="header__link header__link_bg_white_active">О проекте</a>
+      </nav>
+    </header>
+    <main class="page">
+      <section class="for-users">
+        <h1 class="for-users__title">Клиентам</h1>
+        <div class="for-users__description">
+          <p class="for-users__paragraph">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему научился студент, какими технологиями владеет.</p>
+          <p class="for-users__paragraph">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим методологиям. Также сайт проще и дешевле поддерживать.</p>
+          <p class="for-users__paragraph">Карточки с новостями приходят с сервера и обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает удобство использования сервиса.</p>
+          <p class="for-users__paragraph">При создании проекта была использована сборка технологией Webpack. Это современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт работает в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет проблем с отображением. А значит, потенциальная аудитория возрастает.</p>
+          <p class="for-users__paragraph">Проект был проверен экспертами Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
+        </div>
+      </section>
+      <section class="techs">
+        <h2 class="techs__title">Используемые технологии</h2>
+        <div class="techs__cards">
+          <div class="techs__card">
+            <h3 class="techs__name">HTML</h3>
+            <img src="<%=require('./images/html.svg').default%>" alt="Иконка технологии HTML" class="techs__image">
+          </div>
+          <div class="techs__card">
+            <h3 class="techs__name">CSS</h3>
+            <img src="<%=require('./images/css.svg').default%>" alt="Иконка технологии CSS" class="techs__image">
+          </div>
+          <div class="techs__card">
+            <h3 class="techs__name">Java Script</h3>
+            <img src="<%=require('./images/js.svg').default%>" alt="Иконка технологии JavaScript" class="techs__image">
+          </div>
+          <div class="techs__card">
+            <h3 class="techs__name">Webpack</h3>
+            <img src="<%=require('./images/webpack.svg').default%>" alt="Иконка технологии Webpack" class="techs__image">
+          </div>
+        </div>
+      </section>
+      <section class="author">
+        <img src="<%=require('./images/author.png').default%>" alt="Фотография автора" class="author__image">
+        <div class="author__content">
+          <h2 class="author__title">Об авторе</h2>
+          <p class="author__description">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+          <p class="author__description">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам. Если хотите, оставьте свои контакты: email и телефон. Так заказчики смогут с вами связаться.</p>
+        </div>
+      </section>
+      <section class="commits">
+        <h2 class="commits__title">История коммитов из GitHub</h2>
+        <a href="https://github.com/bubase/news_analyzer/commits/master" class="commits__link">Открыть в  Github &nbsp;</a>
+        <div class="swiper-container commits__swiper">
+        <div class="commits__swiper-shadow"></div>
+        <div class="commits__swiper-shadow"></div>
+          <div class="swiper-wrapper">
+              <div class="swiper-slide commits__slide">
+                <p class="commits__date">14 августа, 2019</p>
+                <div class="commits__info">
+                  <img src="<%=require('./images/commits__user01.png').default%>" alt="Фотография пользователя" class="commits__user-photo">
+                  <h3 class="commits__user">Антон Долинин</h3>
+                  <p class="commits__user-email">anton@yandex.ru</p>
+                </div>
+                <p class="commits__comment">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+              </div>
+              <div class="swiper-slide commits__slide">
+                <p class="commits__date">14 августа, 2019</p>
+                <div class="commits__info">
+                  <img src="<%=require('./images/commits__user02.png').default%>" alt="Фотография пользователя" class="commits__user-photo">
+                  <h3 class="commits__user">Мария Фёдорова</h3>
+                  <p class="commits__user-email">mariiifed@yandex.ru</p>
+                </div>
+                <p class="commits__comment">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open <span class="commits__comment commits__comment_selected">&nbsp;Tools > Plugins > Available plugins&nbsp;</span> and find and install Emmet plugin.</p>
+              </div>
+              <div class="swiper-slide commits__slide">
+                <p class="commits__date">14 августа, 2019</p>
+                <div class="commits__info">
+                  <img src="<%=require('./images/commits__user03.png').default%>" alt="Фотография пользователя" class="commits__user-photo">
+                  <h3 class="commits__user">Инга Иванова</h3>
+                  <p class="commits__user-email">ingaiva@yandex.ru</p>
+                </div>
+                <p class="commits__comment">With Emmet, you can type CSS-like expressions that can be dynamically parsed, and produce output depending on what you type in the abb...</p>
+              </div>
+              <div class="swiper-slide commits__slide">
+                <p class="commits__date">14 августа, 2019</p>
+                <div class="commits__info">
+                  <img src="<%=require('./images/commits__user01.png').default%>" alt="Фотография пользователя" class="commits__user-photo">
+                  <h3 class="commits__user">Антон Долинин</h3>
+                  <p class="commits__user-email">anton@yandex.ru</p>
+                </div>
+                <p class="commits__comment">Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
+              </div>
+              <div class="swiper-slide commits__slide">
+                <p class="commits__date">14 августа, 2019</p>
+                <div class="commits__info">
+                  <img src="<%=require('./images/commits__user02.png').default%>" alt="Фотография пользователя" class="commits__user-photo">
+                  <h3 class="commits__user">Мария Фёдорова</h3>
+                  <p class="commits__user-email">mariiifed@yandex.ru</p>
+                </div>
+                <p class="commits__comment">You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open <span class="commits__comment commits__comment_selected">&nbsp;Tools > Plugins > Available plugins&nbsp;</span>and find and install Emmet plugin.</p>
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">© 2019 Supersite</p>
+      <ul class="footer__links">
+        <li><a href="./index.html" class="footer__link">Главная</a></li>
+        <li><a href="./about.html" class="footer__link">О проекте</a></li>
+        <li><a href="https://praktikum.yandex.ru" class="footer__link">Яндекс.Практикум</a></li>
+      </ul>
+      <ul class="footer__social">
+        <li><a href="https://github.com/bubase/news_analyzer" class="footer__link"><img src="<%=require('./images/github.svg').default%>" alt="иконка GitHub"></a></li>
+        <li><a href="https://www.facebook.com/" class="footer__link"><img src="<%=require('./images/facebook.svg').default%>" alt="иконка Facebook"></a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+</body>
+</html>

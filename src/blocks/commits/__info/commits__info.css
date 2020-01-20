@@ -1,0 +1,23 @@
+.commits__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  max-height: 64px;
+  margin: 16px 0;
+}
+
+@media screen and (max-width: 950px) {
+  .commits__info {
+    max-height: 52px;
+    margin: 19px 0 17px 0;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .commits__info {
+    max-height: 52px;
+    margin: 8px 0 16px 0;
+  }
+}
+

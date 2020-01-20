@@ -1,0 +1,30 @@
+@import url(./__link/header__link.css);
+@import url(./__menu/header__menu.css);
+@import url(./__title/header__title.css);
+@import url(./_bg/_image/header_bg_image.css);
+@import url(./_bg/_white/header_bg_white.css);
+
+
+.header {
+  font-family: Roboto, Georgia, serif;
+  color: #1a1b22;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 101px 0 104px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 64px;
+    padding: 0 42px 0 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    height: 56px;
+    padding: 0 14px 0 16px;
+  }
+}

@@ -1,0 +1,10 @@
+.for-users__paragraph {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.for-users__paragraph:not(:last-child) {
+  margin-bottom: 24px;
+}
