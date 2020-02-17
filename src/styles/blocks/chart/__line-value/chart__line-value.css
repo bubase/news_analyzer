@@ -1,0 +1,15 @@
+.chart__line-value {
+  height: 24px;
+  padding-left: 6px;
+  margin: 0;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #2f71e5;
+  min-width: 12px;
+}

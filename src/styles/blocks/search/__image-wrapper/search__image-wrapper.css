@@ -1,0 +1,24 @@
+.search__image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url("../../../../images/search_image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 576px;
+}
+
+@media screen and (max-width: 768px) {
+  .search__image-wrapper {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .search__image-wrapper {
+    height: 536px;
+  }
+}
