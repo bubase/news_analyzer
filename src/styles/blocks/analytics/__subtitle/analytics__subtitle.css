@@ -1,9 +1,0 @@
-.analytics__subtitle {
-  font-size: 18px;
-  line-height: 24px;
-  margin: 0;
-}
-
-.analytics__subtitle:not(:last-child) {
-  padding-bottom: 4px;
-}
