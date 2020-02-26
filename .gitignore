@@ -10,6 +10,7 @@ dist/
 # Файлы инструментов
 node_modules/
 *.log
+jsconfig.json
 
 # Разное
 Thumbs.db
