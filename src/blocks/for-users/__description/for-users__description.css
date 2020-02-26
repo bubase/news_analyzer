@@ -1,0 +1,5 @@
+.for-users__description {
+  display: flex;
+  flex-direction: column;
+  max-width: 815px;
+}

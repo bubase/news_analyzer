@@ -1,0 +1,13 @@
+@import url(./_current/analytics__site-path_current.css);
+
+.analytics__site-path {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  text-decoration: none;
+  color: #1a1b22;
+}
+
+.analytics__site-path:hover {
+  opacity: .7;
+}

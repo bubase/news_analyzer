@@ -1,0 +1,9 @@
+@import url(./_selected/commits__comment_selected.css);
+
+.commits__comment {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  overflow: hidden;
+}

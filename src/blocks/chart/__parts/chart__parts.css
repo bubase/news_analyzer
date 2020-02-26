@@ -1,0 +1,15 @@
+.chart__parts {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 104px;
+}
+
+.chart__parts:not(:last-child) {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 425px) {
+  .chart__parts {
+    display: none;
+  }
+}
