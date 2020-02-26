@@ -1,7 +1,11 @@
+import { ApiComponent } from "./ApiComponent.js";
+
 //Класс взаимодействия с NewsAPI
-class NewsApi {
+export class NewsApi extends ApiComponent{
   constructor() {
+    super();
   }
+
 //Возвращает промис и обрабатывает ответ от сервера
   getNews(reqPhrase, dateReqFrom, dateReqTo, newsApiKey) {
     const newsUrl = 'https://newsapi.org/v2/everything?' +
@@ -14,18 +18,9 @@ class NewsApi {
                     `apiKey=${newsApiKey}`;
     const newsReq = new Request(newsUrl);
     return fetch(newsReq)
+      // .then (() => {return Promise.reject('Why not')})
       .then(res => {
-        return res.json();
+        return this._getResJson(res);
       })
-      .then(data => {
-        console.log(data);
-
-        return data;
-      })
-      .catch(err => {
-        console.log(`NewsAPI response error: ${err}`)
-      });
   }
 }
-
-export { NewsApi };

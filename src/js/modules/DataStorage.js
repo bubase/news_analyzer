@@ -1,5 +1,5 @@
 //Класс работы с localStorage
-class DataStorage {
+export class DataStorage {
   constructor () {
   }
 //Добавление массива данных новостей в localStorage
@@ -13,10 +13,12 @@ class DataStorage {
   setReqPhrase(phrase) {
     localStorage.setItem(`NewsAnalyzer reqPhrase`, `${phrase}`);
   }
+
 //Метод возвращающий объект данных новостей
   getNewsDataObj() {
     return JSON.parse(localStorage['NewsAnalyzer news']);
   }
+
 //Метод возвращающий массив данных заданных карточек
   getNewsItems(firstCard, lastCard) {
     const arrCards = [];
@@ -30,5 +32,3 @@ class DataStorage {
     return arrCards;
   }
 }
-
-export { DataStorage };

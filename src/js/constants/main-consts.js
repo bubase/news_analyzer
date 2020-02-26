@@ -1,5 +1,10 @@
 //Элементы интерфейса сайта
-const searchForm = document.forms.search; //Форма поиска
+const searchForm = document.querySelector('.search__field'); //Форма поиска
+const searchFieldset = document.querySelector('.search__fieldset'); //Филдсет с формой поиска
+const searchBar = document.querySelector('.search__bar') //Инпут формы
+const searchFieldError = document.querySelector('.search__field-error') //Текст ошибки поиска
+const searchButton = document.querySelector('.search__button') //Кнопка поиска
+
 const resultsSection = document.querySelector('.results'); //Секция "Результаты поиска"
 const cardsCont = document.querySelector('.results__container'); //Контейнер с результатами
 const resultsMoreButton = document.querySelector('.results__more'); //Кнопка "Показать еще"
@@ -18,4 +23,4 @@ const chartCaptionMonth = document.querySelector('.chart__caption-date span'); /
 
 const swiperWrapper = document.querySelector('.swiper-wrapper'); //Контейнер карточек коммитов
 
-export { resultsSection, cardsCont, resultsMoreButton, searchForm, loadingCont, notFoundCont, resultsContent, resultsError, statTitleResult, statSubtitleNewsResult, statSubtitleResult, chartLineDates, chartLineValues, chartCaptionMonth, swiperWrapper };
+export { resultsSection, cardsCont, resultsMoreButton, searchForm, searchFieldset, searchBar, searchFieldError, searchButton, loadingCont, notFoundCont, resultsContent, resultsError, statTitleResult, statSubtitleNewsResult, statSubtitleResult, chartLineDates, chartLineValues, chartCaptionMonth, swiperWrapper };
