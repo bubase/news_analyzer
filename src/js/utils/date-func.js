@@ -4,9 +4,9 @@ function dateRequest(date) {
 };
 //Функция перевода в формат даты для карточки
 function dateTranslate(date) {
-  const monthArr = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря']
+  const monthsArr = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря']
   return date.slice(0, 10).replace(/(\d{4})-(\d{1,2})-0?([1-9]{1,2}0?)/, function(p1,p2,p3,p4){
-    return `${p4} ${monthArr[parseFloat(p3)-1]}, ${p2}`;
+    return `${p4} ${monthsArr[parseFloat(p3)-1]}, ${p2}`;
   })
 }
 

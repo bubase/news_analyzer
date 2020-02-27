@@ -5,11 +5,11 @@ const DATE_FROM = day => new Date(Date.now() - day * MILLISEC_IN_DAY);
 
 //Функция возвращающая массив дней текущей недели
 const DAYS_WEEK_NOW = function() {
-  const arr = [];
+  const daysOfActualWeek = [];
   for (let day=0; day<7; day++) { //7 дней
-    arr.push(`${DATE_FROM(day).getDate()}, ${DAYS_OF_WEEK[DATE_FROM(day+1).getDay()]}`);
+    daysOfActualWeek.push(`${DATE_FROM(day).getDate()}, ${DAYS_OF_WEEK[DATE_FROM(day+1).getDay()]}`);
   }
-  return arr.reverse();
+  return daysOfActualWeek.reverse();
 }
 
 const MILLISEC_IN_DAY = 24 /* часов */ * 60 /* минут */ * 60 /* секунд */ * 1000 /* миллисекунд */ //Количество миллисекунд в сутках

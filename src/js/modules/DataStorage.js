@@ -3,10 +3,10 @@ export class DataStorage {
   constructor () {
   }
 //Добавление массива данных новостей в localStorage
-  setNewsItems(dataObject) {
-    const jsonStr = JSON.stringify(dataObject.articles);
-    localStorage.setItem(`NewsAnalyzer news`, `${jsonStr}`);
-    localStorage.setItem(`NewsAnalyzer newsTotalResults`, `${dataObject.totalResults}`);
+  setNewsItems(newsArray) {
+    const jsonStrNews = JSON.stringify(newsArray.articles);
+    localStorage.setItem(`NewsAnalyzer news`, `${jsonStrNews}`);
+    localStorage.setItem(`NewsAnalyzer newsTotalResults`, `${newsArray.totalResults}`);
   }
 
 //Добавление поискового запроса в localStorage
@@ -14,21 +14,21 @@ export class DataStorage {
     localStorage.setItem(`NewsAnalyzer reqPhrase`, `${phrase}`);
   }
 
-//Метод возвращающий объект данных новостей
-  getNewsDataObj() {
+//Метод возвращающий массив объектов данных новостей из localStorage
+  getNewsArray() {
     return JSON.parse(localStorage['NewsAnalyzer news']);
   }
 
-//Метод возвращающий массив данных заданных карточек
+//Метод возвращающий массив данных заданных карточек из localStorage
   getNewsItems(firstCard, lastCard) {
-    const arrCards = [];
-    const dataObject = this.getNewsDataObj();
+    const newsCards = [];
+    const newsArray = this.getNewsArray();
     for (let i = firstCard; i < lastCard; i++) {
-      if (dataObject[i]) {
-        arrCards.push(dataObject[i]);
+      if (newsArray[i]) {
+        newsCards.push(newsArray[i]);
       }
       else {continue}
     }
-    return arrCards;
+    return newsCards;
   }
 }

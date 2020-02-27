@@ -18,7 +18,6 @@ export class NewsApi extends ApiComponent{
                     `apiKey=${newsApiKey}`;
     const newsReq = new Request(newsUrl);
     return fetch(newsReq)
-      // .then (() => {return Promise.reject('Why not')})
       .then(res => {
         return this._getResJson(res);
       })
