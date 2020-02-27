@@ -1,6 +1,6 @@
 {
   "name": "news_analyzer",
-  "version": "0.0.2",
+  "version": "0.1.2",
   "description": "News Analyzer service",
   "main": "index.js",
   "scripts": {
