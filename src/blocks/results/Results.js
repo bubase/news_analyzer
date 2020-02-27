@@ -1,9 +1,9 @@
 import { dateTranslate } from "../../js/utils/date-func.js";
 
 //Класс отвечающий за работу контейнера карточек
-export class NewsCardList {
-  constructor (resultsSection, cardsContainer, updateButton, loadingCont, notFoundCont, resultsError, resultsContent, newsCard, dataStorage) {
-    this._newsCard = newsCard;
+export class Results {
+  constructor ({resultsSection, cardsContainer, updateButton, loadingCont, notFoundCont, resultsError, resultsContent, result, dataStorage}) {
+    this._result = result;
     this._dataStorage = dataStorage;
 
     this._resultsSection = resultsSection;
@@ -41,13 +41,20 @@ export class NewsCardList {
       this.firstCount = 0;
       this.lastCount = this._numForRender;
     }
-    this._dataStorage.getNewsItems(this.firstCount, this.lastCount).forEach(e => {
-      const newCard = this._newsCard.createCard(e.urlToImage, dateTranslate(e.publishedAt), e.title, e.description, e.url, e.source.name);
+    this._dataStorage.getNewsItems(this.firstCount, this.lastCount).forEach(elem => {
+      const newCard = this._result.createCard({
+        imageUrl: elem.urlToImage,
+        date: dateTranslate(elem.publishedAt),
+        title: elem.title,
+        text: elem.description,
+        url: elem.url,
+        sourceName: elem.source.name
+      });
       this._cardsContainer.insertAdjacentHTML('beforeend', newCard);
       this.lastCount++;
       this.firstCount++;
       this.displayElement('show', this._updateButton);
-      if (this.firstCount === this._dataStorage.getNewsDataObj().length) {
+      if (this.firstCount === this._dataStorage.getNewsArray().length) {
         this.displayElement('hide', this._updateButton);
       }
     });

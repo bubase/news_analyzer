@@ -2,13 +2,13 @@ import imgPlaceholder from "../../../images/image-placeholder.png";
 import { BaseComponent } from "../../../js/components/BaseComponent.js";
 
 //Класс карточки новостей
-export class NewsCard extends BaseComponent {
+export class Result extends BaseComponent {
   constructor () {
     super();
   }
 
 //Создание разметки карточки
-  createCard (imageUrl, date, title, text, url, sourceName) {
+  createCard ({imageUrl, date, title, text, url, sourceName}) {
     return `
     <a href="${this._sanitizeHTML(url)}" class="result" target="_blank">
       <img src=${this._sanitizeHTML(imageUrl)} alt="Изображение для новости" class="result__image" onerror=this.src="${this._sanitizeHTML(imgPlaceholder)}">

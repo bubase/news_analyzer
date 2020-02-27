@@ -7,9 +7,9 @@ export class CommitCard extends BaseComponent {
   }
 
 //Создание разметки карточки
-  createCard (url, date, imageUrl, committerName, email, text) {
+  createCard ({url, date, imageUrl, committerName, email, text}) {
     return `
-    <a href="${this._sanitizeHTML(url)}" class="swiper-slide commits__slide">
+    <a href="${this._sanitizeHTML(url)}" class="swiper-slide commits__card">
       <p class="commits__date">${this._sanitizeHTML(date)}</p>
       <div class="commits__info">
         <img src="${this._sanitizeHTML(imageUrl)}" alt="Фотография пользователя" class="commits__user-photo">
