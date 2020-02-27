@@ -9,7 +9,7 @@
   <meta name="keywords" content="новости, анализ новостей, сервис новостей, события, информация, статья">
   <meta name="author" content="Ильмурад Рахмаев">
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
-  <link rel="stylesheet" href="./styles/index.0501324fb840730d495f.css">
+  <link rel="stylesheet" href="./styles/index.f2ccb76efa2a19ed1c86.css">
 </head>
 <body>
   <div class="root">
@@ -25,12 +25,13 @@
         <div class="search__image-wrapper"></div>
         <h1 class="search__title">Что в мире творится?</h1>
         <h2 class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</h2>
-        <form class="search__field" name="search">
-          <input type="text" class="search__bar" name="request" placeholder="Введите тему новости" required
-            oninvalid="this.setCustomValidity('Нужно ввести ключевое слово')"
-            oninput="this.setCustomValidity('')">
-          <button class="search__button">Искать</button>
-        </form>
+        <fieldset class="search__fieldset">
+          <form class="search__field" name="search">
+            <input type="text" class="search__bar" name="request" placeholder="Введите тему новости">
+              <span class="search__field-error">Нужно ввести ключевое слово</span>
+            <button class="search__button" disabled>Искать</button>
+          </form>
+        </fieldset>
       </section>
       <section class="results">
         <div class="results__loading">
@@ -81,6 +82,6 @@
       </ul>
     </footer>
   </div>
-  <script src="index.13f85dd8c3d7b0cd3fff.js"></script>
+  <script src="index.ce72eef2129e5b15062c.js"></script>
 </body>
 </html>
