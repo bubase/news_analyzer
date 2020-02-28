@@ -21,7 +21,6 @@ https://bubase.github.io/news_analyzer
 ## В разработке:
 - Использование SCSS
 
-
 ## Как развернуть проект:
 npm run "вид сборки"
 ```
@@ -37,4 +36,3 @@ npm run "вид сборки"
 "dev-w": "cross-env webpack-dev-server --mode development --open --watch",
 "deploy-w": "cross-env gh-pages -d dist"
 ```
-
