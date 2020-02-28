@@ -1,6 +1,4 @@
 .author__image {
-  width: 50%;
-  height: 50%;
   max-width: 464px;
   max-height: 464px;
   margin-right: 56px;
@@ -8,8 +6,6 @@
 
 @media screen and (max-width: 900px) {
   .author__image {
-    width: 40%;
-    height: 40%;
     margin: 21px 32px 13px 0;
   }
 }

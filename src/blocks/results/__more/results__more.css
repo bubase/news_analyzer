@@ -1,3 +1,5 @@
+@import url(./_is-displayed/results__more_is-displayed.css);
+
 .results__more {
   border-radius: 80px;
   height: 64px;
@@ -8,6 +10,7 @@
   line-height: 24px;
   border: none;
   background-color: #fff;
+  display: none;
 }
 
 .results__more:hover {

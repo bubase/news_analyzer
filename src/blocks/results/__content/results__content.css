@@ -1,8 +1,11 @@
+@import url(./_is-displayed/results__content_is-displayed.css);
+
 .results__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 64px;
+  display: none;
 }
 
 @media screen and (max-width: 1015px) {

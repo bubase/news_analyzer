@@ -1,7 +1,10 @@
 @import url(./__site-path/analytics__site-path.css);
 @import url(./__title/analytics__title.css);
 @import url(./__subtitle/analytics__subtitle.css);
-@import url(./__result/analytics__result.css);
+@import url(./__subtitle-result/analytics__subtitle-result.css);
+@import url(./__title-result/analytics__title-result.css);
+@import url(./__subtitle-news-result/analytics__subtitle-news-result.css);
+@import url(./__content/analytics__content.css);
 
 .analytics {
   font-family: Roboto, Georgia, serif;

@@ -1,4 +1,4 @@
-.commits__slide {
+.commits__card {
   display: flex;
   flex-direction: column;
   max-width: 352px;
@@ -8,10 +8,12 @@
   padding: 24px;
   cursor: pointer;
   box-shadow: 0 5px 15px rgba(14,26,57,.05);
+  text-decoration: none;
+  color: #1a1b22;
 }
 
 @media screen and (max-width: 950px) {
-  .commits__slide {
+  .commits__card {
     padding-right: 16px;
     max-width: 296px;
     max-height: 194px;
@@ -19,7 +21,7 @@
 }
 
 @media screen and (max-width: 670px) {
-  .commits__slide {
+  .commits__card {
     padding: 16px 26px 16px 16px;
     max-width: 246px;
     max-height: 232px;

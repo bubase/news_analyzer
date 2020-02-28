@@ -1,0 +1,10 @@
+.search__fieldset {
+  position: relative;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search__fieldset:disabled {
+  opacity: .7;
+}

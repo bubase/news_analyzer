@@ -1,7 +1,7 @@
-@import url("./__content/author__content.css");
-@import url("./__description/author__description.css");
-@import url("./__image/author__image.css");
-@import url("./__title/author__title.css");
+@import url(./__content/author__content.css);
+@import url(./__description/author__description.css);
+@import url(./__image/author__image.css);
+@import url(./__title/author__title.css);
 
 .author {
   font-family: Roboto, Georgia, serif;

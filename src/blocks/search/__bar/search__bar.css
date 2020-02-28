@@ -15,6 +15,10 @@
   color: #B6BCBF;
 }
 
+.search__bar:focus {
+  border: 1px solid #2f71e5;
+}
+
 @media screen and (max-width: 660px) {
   .search__bar {
     padding: 0 calc(45% + 16px) 0 16px;

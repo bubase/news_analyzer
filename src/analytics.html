@@ -9,7 +9,7 @@
   <meta name="keywords" content="новости, анализ новостей, сервис новостей, события, информация, статья">
   <meta name="author" content="Ильмурад Рахмаев">
   <link rel="shortcut icon" href="<%=require('./images/favicon.png').default%>" type="image/x-icon">
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analytics.css %>">
 </head>
 <body>
   <div class="root">
@@ -22,16 +22,19 @@
     </header>
     <main class="page">
       <section class="analytics">
-        <p class="analytics__site-path">Главная <span class="analytics__site-path_current">/ Аналитика</span></p>
-        <h1 class="analytics__title">Вы спросили: «Путешествия»</h1>
-        <p class="analytics__subtitle">Новостей за неделю: <span class="analytics__result">34 324</span></p>
-        <p class="analytics__subtitle">Упоминаний в заголовках: <span class="analytics__result">235</span></p>
+        <div class="analytics__content">
+          <a href="./index.html" class="analytics__site-path">Главная</a>
+          <span class="analytics__site-path_current">/ Аналитика</span>
+        </div>
+        <h1 class="analytics__title">Вы спросили: <span class="analytics__title-result"></span></h1>
+        <p class="analytics__subtitle">Новостей за неделю: <span class="analytics__subtitle-news-result"></span></p>
+        <p class="analytics__subtitle">Упоминаний в заголовках: <span class="analytics__subtitle-result"></span></p>
       </section>
       <section class="chart">
         <h2 class="chart__title">Аналитика по дням</h2>
         <div class="chart__table">
           <div class="chart__captions">
-            <p class="chart__caption-date">Дата<br>(август)</p>
+            <p class="chart__caption-date">Дата<span>(август)</span></p>
             <p class="chart__caption-num">Кол-во упоминаний</p>
           </div>
           <div class="chart__diagrams">
@@ -43,32 +46,32 @@
               <p class="chart__part">100</p>
             </div>
             <div class="chart__table-line">
-              <p class="chart__line-date">19, пн</p>
-              <p class="chart__line-value">15</p>
+              <p class="chart__line-date"></p>
+              <p class="chart__line-value">0</p>
             </div>
             <div class="chart__table-line">
-              <p class="chart__line-date">20, вт</p>
-              <p class="chart__line-value">18</p>
+              <p class="chart__line-date"></p>
+              <p class="chart__line-value">0</p>
             </div>
             <div class="chart__table-line">
-              <p class="chart__line-date">21, ср</p>
-              <p class="chart__line-value">11</p>
+              <p class="chart__line-date"></p>
+              <p class="chart__line-value">0</p>
             </div>
             <div class="chart__table-line">
-              <p class="chart__line-date">22, чт</p>
-              <p class="chart__line-value">39</p>
+              <p class="chart__line-date"></p>
+              <p class="chart__line-value">0</p>
             </div>
             <div class="chart__table-line">
-              <p class="chart__line-date">23, пт</p>
-              <p class="chart__line-value">45</p>
+              <p class="chart__line-date"></p>
+              <p class="chart__line-value">0</p>
             </div>
             <div class="chart__table-line">
-              <p class="chart__line-date">24, сб</p>
-              <p class="chart__line-value">73</p>
+              <p class="chart__line-date"></p>
+              <p class="chart__line-value">0</p>
             </div>
             <div class="chart__table-line">
-              <p class="chart__line-date">25, вс</p>
-              <p class="chart__line-value">34</p>
+              <p class="chart__line-date"></p>
+              <p class="chart__line-value">0</p>
             </div>
             <div class="chart__parts">
               <p class="chart__part">0</p>
@@ -94,6 +97,6 @@
       </ul>
     </footer>
   </div>
-  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.analytics.entry %>"></script>
 </body>
 </html>

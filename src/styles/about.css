@@ -1,8 +1,8 @@
 /* Vendor */
-@import url(../vendor/normalize.css);
-@import url(../vendor/fonts.css);
-@import url(../vendor/swiper.min.css);
-@import url(../vendor/swiper.css);
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts.css);
+@import url(./vendor/swiper.min.css);
+@import url(./vendor/swiper.css);
 
 @import url(../blocks/root/root.css);
 @import url(../blocks/header/header.css);

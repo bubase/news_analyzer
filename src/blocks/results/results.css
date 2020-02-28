@@ -9,6 +9,13 @@
 @import url(./__img-not-found/results__img-not-found.css);
 @import url(./__not-found-description/results__not-found-description.css);
 @import url(./__not-found-message/results__not-found-message.css);
+@import url(./__not-found/results__not-found.css);
+@import url(./__loading/results__loading.css);
+@import url(./_is-displayed/results_is-displayed.css);
+@import url(./__error/results__error.css);
+@import url(./__img-error/results__img-error.css);
+@import url(./__error-message/results__error-message.css);
+@import url(./__error-description/results__error-description.css);
 
 .results {
   font-family: Roboto, Georgia, serif;
@@ -17,6 +24,7 @@
   flex-direction: column;
   padding: 80px 104px;
   background-color: #f5f6f7;
+  display: none;
 }
 
 @media screen and (max-width: 900px) {

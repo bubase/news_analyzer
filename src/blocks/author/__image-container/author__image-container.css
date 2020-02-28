@@ -1,0 +1,11 @@
+.author__image-container {
+  width: 50%;
+  height: 50%;
+}
+
+@media screen and (max-width: 900px) {
+  .author__image-container {
+    width: 40%;
+    height: 40%;
+  }
+}

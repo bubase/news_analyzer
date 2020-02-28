@@ -1,7 +1,7 @@
-@import url("./__copyright/footer__copyright.css");
-@import url("./__link/footer__link.css");
-@import url("./__links/footer__links.css");
-@import url("./__social/footer__social.css");
+@import url(./__copyright/footer__copyright.css);
+@import url(./__link/footer__link.css);
+@import url(./__links/footer__links.css);
+@import url(./__social/footer__social.css);
 
 .footer {
   font-family: Roboto, Georgia, serif;

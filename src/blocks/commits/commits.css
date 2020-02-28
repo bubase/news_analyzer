@@ -1,7 +1,7 @@
 @import url(./__title/commits__title.css);
 @import url(./__link/commits__link.css);
 @import url(./__swiper/commits__swiper.css);
-@import url(./__slide/commits__slide.css);
+@import url(./__card/commits__card.css);
 @import url(./__date/commits__date.css);
 @import url(./__info/commits__info.css);
 @import url(./__user-photo/commits__user-photo.css);

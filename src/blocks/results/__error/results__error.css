@@ -1,0 +1,7 @@
+@import url(./_is-displayed/results__error_is-displayed.css);
+
+.results__error {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}

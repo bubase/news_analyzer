@@ -10,13 +10,13 @@ var mySwiper = new Swiper('.swiper-container', {
       clickable: true,
     },
     speed: 700,
-    keyboard: true,
+    keyboard: true, //Переключение кнопками
     breakpoints: {
       320: {
-        slidesPerView: 1,
-        spaceBetween: 8,
-        slidesOffsetBefore: 16,
-        slidesOffsetAfter: 16,
+        slidesPerView: 1, //Количество слайдов на одной странице слайдера
+        spaceBetween: 8, //Отступ между карточками (величина: px)
+        slidesOffsetBefore: 16, //Расстояние до контейнера с карточками (величина: px)
+        slidesOffsetAfter: 16, //Расстояние после контейнера с карточками (величина: px)
       },
       531: {
         slidesPerView: 1,
@@ -45,3 +45,5 @@ var mySwiper = new Swiper('.swiper-container', {
     }
   }
 );
+
+export { mySwiper }

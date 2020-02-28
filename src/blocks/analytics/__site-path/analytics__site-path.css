@@ -4,10 +4,10 @@
   font-size: 18px;
   line-height: 24px;
   margin: 0;
+  text-decoration: none;
+  color: #1a1b22;
 }
 
-@media screen and (max-width: 425px) {
-  .analytics__site-path {
-    display: none;
-  }
+.analytics__site-path:hover {
+  opacity: .7;
 }

@@ -1,3 +1,7 @@
+.result__image {
+  height: 272px;
+}
+
 @media screen and (max-width: 1015px) {
   .result__image {
     height: 150px;

@@ -1,6 +1,6 @@
 {
   "name": "news_analyzer",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "description": "News Analyzer service",
   "main": "index.js",
   "scripts": {
@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "babel-polyfill": "6.26.0",
-    "core-js": "3.4.1"
+    "core-js": "3.4.1",
+    "serialize-javascript": "2.1.2"
   }
 }
