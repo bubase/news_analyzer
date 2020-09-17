@@ -8,8 +8,8 @@ export class NewsApi extends ApiComponent{
 
 //Возвращает промис и обрабатывает ответ от сервера
   getNews(reqPhrase, dateReqFrom, dateReqTo, newsApiKey) {
-    const newsUrl = 'https://newsapi.org/v2/everything?' +
-                    `q=${reqPhrase}&` +
+    const newsUrl = 'https://nomoreparties.co/news/v2/everything?' +
+                    `q=${encodeURIComponent(reqPhrase)}&` +
                     `from=${dateReqFrom}&`+
                     `to=${dateReqTo}&` +
                     'sortBy=relevancy&' +

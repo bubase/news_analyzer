@@ -37,7 +37,8 @@ const search = new Search ({
 
 //Отрисовка результатов из localStorage при загрузке страницы
 window.onload = () => {
-  if (localStorage['NewsAnalyzer newsTotalResults'] !== '0') {
+  const storage = localStorage['NewsAnalyzer newsTotalResults'];
+  if (storage !== '0' && storage !== undefined) {
     searchBar.value = localStorage['NewsAnalyzer reqPhrase'];
     results.render()
     results.displayElement('show', resultsSection)
